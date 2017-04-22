@@ -1,10 +1,10 @@
 <counter>
-    <h3>Counter</h3>
+    <h3>Count</h3>
 
-    <p>{ content }</p>
-    <p>Foo</p>
+    <p>{ count }</p>
 
     <script>
-        this.content = "lorem ipsum dolor sit amet";
+        let counter = 0;
+        this.count = counter;
     </script>
 </counter>
