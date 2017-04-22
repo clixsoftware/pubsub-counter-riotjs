@@ -8,6 +8,10 @@
     <script>
         import { log } from "../js/util";
 
+        let eventStore = opts.eventStore;
+
+        log('INFO', eventStore);
+
         let counter = 0;
         this.count = counter;
 

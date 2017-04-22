@@ -1,4 +1,6 @@
 /*global riot */
 import "../dist/counter";
+import EventStore from './EventStore'
 
-riot.mount("*");
+let eventStore = new EventStore();
+riot.mount("*", eventStore);
