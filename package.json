@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "compile": "riot ui.tag dist && webpack",
+    "compile": "riot js/components/ui.tag dist && webpack",
     "render": "node render.js"
   },
   "dependencies": {
@@ -12,6 +12,7 @@
     "babel-loader": "^6.1.0",
     "babel-preset-es2015": "^6.1.4",
     "eslint": "^3.19.0",
+    "glob": "^7.1.1",
     "http-server": "^0.9.0",
     "webpack": "^1.12.3"
   }

@@ -3,9 +3,10 @@
 
 var webpack = require("webpack");
 var path = require("path");
+var glob = require("glob");
 
 module.exports = {
-	entry: "./main.js",
+	entry: glob.sync("./js/*.js"),
 	output: {
 		path: __dirname + "/dist",
 		filename: "bundle.js"
