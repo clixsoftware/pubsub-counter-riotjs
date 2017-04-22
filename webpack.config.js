@@ -27,5 +27,9 @@ module.exports = {
 		new webpack.ProvidePlugin({
 			riot: "riot/riot"
 		})
-	]
+	],
+    stats: {
+        colors: true
+    },
+    devtool: 'source-map'
 };
