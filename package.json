@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "compile": "riot js/components/counter.tag dist && webpack",
+    "compile": "riot js  dist && webpack",
     "render": "node render.js"
   },
   "dependencies": {
