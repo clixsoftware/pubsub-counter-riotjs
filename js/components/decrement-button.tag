@@ -17,9 +17,6 @@
             };
 
             eventStore.add(counterDecrementEvent);
-
-            log("INFO", "Decrement button was clicked!");
-            log('INFO', eventStore.events);
         }.bind(this)
     </script>
 </decrement>

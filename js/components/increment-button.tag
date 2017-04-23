@@ -17,9 +17,6 @@
             };
 
             eventStore.add(counterIncrementEvent);
-
-            log("INFO", "Increment button was clicked!");
-            log('INFO', eventStore.events);
         }.bind(this)
     </script>
 </increment>

@@ -18,6 +18,7 @@
 
         this.on('mount', function() {
             this.subscribe('sync', 'counter.increment');
+            this.subscribe('sync', 'counter.decrement');
         });
 
         this.subscribe = function(channel, topic) {
@@ -43,9 +44,11 @@
 
         this.reduce = function(events) {
             return events.reduce(function(state, event) {
-                state.count += event.data.count;
+                if(event.topic === 'counter.increment' || event.topic === 'counter.decrement') {
+                    state.count += event.data.count;
 
-                return state;
+                    return state;
+                }
             }, {
                 count: 0
             })
